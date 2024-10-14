@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../tinyNPU_1901.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../tinyNPU_1901.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" --include "C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/F2R_Block.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/IM2COL_Block.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/new/POOL_Block.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/PU_Block.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/bram.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/comparator.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/f2r_control.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/filter2row.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/filter2systolic.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/im2col.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/im2col_control.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/im2systolic.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/new/npu_control.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/pe.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/pu.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/imports/new/pu_control.v" \
+"../../../../tinyNPU_1901.srcs/sources_1/new/tinyNPU.v" \
+"../../../../tinyNPU_1901.srcs/sim_1/new/tb_tinyNPU.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,37 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/F2R_Block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module F2R_Block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/IM2COL_Block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM2COL_Block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/new/POOL_Block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POOL_Block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/PU_Block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PU_Block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/f2r_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module f2r_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/filter2row.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filter2row
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/filter2systolic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filter2systolic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/im2col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module im2col
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/im2col_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module im2col_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/im2systolic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module im2systolic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/new/npu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module npu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/pe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/pu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/pu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/new/tinyNPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tinyNPU
+INFO: [VRFC 10-2458] undeclared symbol w_i2c_valid, assumed default net type wire [C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/new/tinyNPU.v:231]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sim_1/new/tb_tinyNPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_tinyNPU

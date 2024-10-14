@@ -1,0 +1,32 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d03eb6bba4024376810f560b6bfadf17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_tinyNPU_behav xil_defaultlib.tb_tinyNPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'i_slice_number' [C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/IM2COL_Block.v:92]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'i_ram_to_f2r_data' [C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/new/tinyNPU.v:263]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'i_slice_number' [C:/Users/qwer/Desktop/work/tinyNPU_1901/tinyNPU_1901.srcs/sources_1/imports/new/F2R_Block.v:75]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.npu_control
+Compiling module xil_defaultlib.im2col_control
+Compiling module xil_defaultlib.im2col(MAX_DEPTH_IMAGE=3136,MAX_...
+Compiling module xil_defaultlib.im2systolic(MAX_SYS_HEIGHT=16,MA...
+Compiling module xil_defaultlib.IM2COL_Block(MAX_DEPTH_IMAGE=313...
+Compiling module xil_defaultlib.f2r_control
+Compiling module xil_defaultlib.filter2row(MAX_DEPTH_FILTER=1280...
+Compiling module xil_defaultlib.filter2systolic(MAX_SYS_HEIGHT=2...
+Compiling module xil_defaultlib.F2R_Block(MAX_SYS_HEIGHT=200,MAX...
+Compiling module xil_defaultlib.pu_control
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.pu_default
+Compiling module xil_defaultlib.PU_Block
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.POOL_Block
+Compiling module xil_defaultlib.bram(RAM_WIDTH=32,RAM_DEPTH=3136...
+Compiling module xil_defaultlib.tinyNPU(MAX_SYS_PORT=16,V_PORT_W...
+Compiling module xil_defaultlib.tb_tinyNPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_tinyNPU_behav

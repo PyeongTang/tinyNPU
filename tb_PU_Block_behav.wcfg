@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_PU_Block_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_PU_Block" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="134000fs"></ZoomStartTime>
+      <ZoomEndTime time="260001fs"></ZoomEndTime>
+      <Cursor1Time time="175000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="295"></NameColumnWidth>
+      <ValueColumnWidth column_width="311"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group856" type="group">
+      <obj_property name="label">CTRL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_n_reset" type="logic">
+         <obj_property name="ElementShortName">i_n_reset</obj_property>
+         <obj_property name="ObjectShortName">i_n_reset</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_set_param" type="logic">
+         <obj_property name="ElementShortName">i_set_param</obj_property>
+         <obj_property name="ObjectShortName">i_set_param</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_start_mac" type="logic">
+         <obj_property name="ElementShortName">i_start_mac</obj_property>
+         <obj_property name="ObjectShortName">i_start_mac</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/o_pu_ready" type="logic">
+         <obj_property name="ElementShortName">o_pu_ready</obj_property>
+         <obj_property name="ObjectShortName">o_pu_ready</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_mac_done" type="logic">
+         <obj_property name="ElementShortName">i_mac_done</obj_property>
+         <obj_property name="ObjectShortName">i_mac_done</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/o_mac_done" type="logic">
+         <obj_property name="ElementShortName">o_mac_done</obj_property>
+         <obj_property name="ObjectShortName">o_mac_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_mac_again" type="logic">
+         <obj_property name="ElementShortName">i_mac_again</obj_property>
+         <obj_property name="ObjectShortName">i_mac_again</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_flush" type="logic">
+         <obj_property name="ElementShortName">i_flush</obj_property>
+         <obj_property name="ObjectShortName">i_flush</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_set_param_done" type="logic">
+         <obj_property name="ElementShortName">i_set_param_done</obj_property>
+         <obj_property name="ObjectShortName">i_set_param_done</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/o_set_param" type="logic">
+         <obj_property name="ElementShortName">o_set_param</obj_property>
+         <obj_property name="ObjectShortName">o_set_param</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/o_enable" type="logic">
+         <obj_property name="ElementShortName">o_enable</obj_property>
+         <obj_property name="ObjectShortName">o_enable</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/o_read" type="logic">
+         <obj_property name="ElementShortName">o_read</obj_property>
+         <obj_property name="ObjectShortName">o_read</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/i_read_done" type="logic">
+         <obj_property name="ElementShortName">i_read_done</obj_property>
+         <obj_property name="ObjectShortName">i_read_done</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/o_en_local_buffer" type="logic">
+         <obj_property name="ElementShortName">o_en_local_buffer</obj_property>
+         <obj_property name="ObjectShortName">o_en_local_buffer</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/o_wr_local_buffer" type="logic">
+         <obj_property name="ElementShortName">o_wr_local_buffer</obj_property>
+         <obj_property name="ObjectShortName">o_wr_local_buffer</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/present_state" type="array">
+         <obj_property name="ElementShortName">present_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">present_state[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="group893" type="group">
+         <obj_property name="label">reg</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_pu_ready" type="logic">
+            <obj_property name="ElementShortName">r_pu_ready</obj_property>
+            <obj_property name="ObjectShortName">r_pu_ready</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_mac_done" type="logic">
+            <obj_property name="ElementShortName">r_mac_done</obj_property>
+            <obj_property name="ObjectShortName">r_mac_done</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_enable" type="logic">
+            <obj_property name="ElementShortName">r_enable</obj_property>
+            <obj_property name="ObjectShortName">r_enable</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_read" type="logic">
+            <obj_property name="ElementShortName">r_read</obj_property>
+            <obj_property name="ObjectShortName">r_read</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_set_param" type="logic">
+            <obj_property name="ElementShortName">r_set_param</obj_property>
+            <obj_property name="ObjectShortName">r_set_param</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_en_local_buffer" type="logic">
+            <obj_property name="ElementShortName">r_en_local_buffer</obj_property>
+            <obj_property name="ObjectShortName">r_en_local_buffer</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_wr_local_buffer" type="logic">
+            <obj_property name="ElementShortName">r_wr_local_buffer</obj_property>
+            <obj_property name="ObjectShortName">r_wr_local_buffer</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_en_local_buffer_z" type="logic">
+            <obj_property name="ElementShortName">r_en_local_buffer_z</obj_property>
+            <obj_property name="ObjectShortName">r_en_local_buffer_z</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_PU_Block/DUT/PU_CTRL/r_wr_local_buffer_z" type="logic">
+            <obj_property name="ElementShortName">r_wr_local_buffer_z</obj_property>
+            <obj_property name="ObjectShortName">r_wr_local_buffer_z</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group857" type="group">
+      <obj_property name="label">PU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_n_reset" type="logic">
+         <obj_property name="ElementShortName">i_n_reset</obj_property>
+         <obj_property name="ObjectShortName">i_n_reset</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_set_param" type="logic">
+         <obj_property name="ElementShortName">i_set_param</obj_property>
+         <obj_property name="ObjectShortName">i_set_param</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_enable" type="logic">
+         <obj_property name="ElementShortName">i_enable</obj_property>
+         <obj_property name="ObjectShortName">i_enable</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_read" type="logic">
+         <obj_property name="ElementShortName">i_read</obj_property>
+         <obj_property name="ObjectShortName">i_read</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/o_set_param_done" type="logic">
+         <obj_property name="ElementShortName">o_set_param_done</obj_property>
+         <obj_property name="ObjectShortName">o_set_param_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_pu_cycle_horizontal" type="array">
+         <obj_property name="ElementShortName">i_pu_cycle_horizontal[9:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pu_cycle_horizontal[9:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_pu_cycle_vertical" type="array">
+         <obj_property name="ElementShortName">i_pu_cycle_vertical[9:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pu_cycle_vertical[9:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/o_mac_done" type="logic">
+         <obj_property name="ElementShortName">o_mac_done</obj_property>
+         <obj_property name="ObjectShortName">o_mac_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/o_read_done" type="logic">
+         <obj_property name="ElementShortName">o_read_done</obj_property>
+         <obj_property name="ObjectShortName">o_read_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_valid" type="logic">
+         <obj_property name="ElementShortName">i_valid</obj_property>
+         <obj_property name="ObjectShortName">i_valid</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_data_v" type="array">
+         <obj_property name="ElementShortName">i_data_v[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data_v[127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/i_data_h" type="array">
+         <obj_property name="ElementShortName">i_data_h[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data_h[127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/o_data_s" type="array">
+         <obj_property name="ElementShortName">o_data_s[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data_s[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/o_valid" type="logic">
+         <obj_property name="ElementShortName">o_valid</obj_property>
+         <obj_property name="ObjectShortName">o_valid</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_set_param_done" type="logic">
+         <obj_property name="ElementShortName">r_set_param_done</obj_property>
+         <obj_property name="ObjectShortName">r_set_param_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_pu_cycle_horizontal" type="array">
+         <obj_property name="ElementShortName">r_pu_cycle_horizontal[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pu_cycle_horizontal[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_pu_cycle_vertical" type="array">
+         <obj_property name="ElementShortName">r_pu_cycle_vertical[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pu_cycle_vertical[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_pu_sys_usage_height" type="array">
+         <obj_property name="ElementShortName">r_pu_sys_usage_height[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pu_sys_usage_height[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_pu_sys_usage_width" type="array">
+         <obj_property name="ElementShortName">r_pu_sys_usage_width[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pu_sys_usage_width[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_pe_count" type="array">
+         <obj_property name="ElementShortName">r_pe_count[8:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pe_count[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/w_pu_cycle" type="array">
+         <obj_property name="ElementShortName">w_pu_cycle[9:0]</obj_property>
+         <obj_property name="ObjectShortName">w_pu_cycle[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_pu_sys_usage_width_count" type="array">
+         <obj_property name="ElementShortName">r_pu_sys_usage_width_count[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pu_sys_usage_width_count[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_pu_sys_usage_height_count" type="array">
+         <obj_property name="ElementShortName">r_pu_sys_usage_height_count[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pu_sys_usage_height_count[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_read_done" type="logic">
+         <obj_property name="ElementShortName">r_read_done</obj_property>
+         <obj_property name="ObjectShortName">r_read_done</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/r_mac_done" type="logic">
+         <obj_property name="ElementShortName">r_mac_done</obj_property>
+         <obj_property name="ObjectShortName">r_mac_done</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/w_pe_h" type="array">
+         <obj_property name="ElementShortName">w_pe_h[2175:0]</obj_property>
+         <obj_property name="ObjectShortName">w_pe_h[2175:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/w_pe_v" type="array">
+         <obj_property name="ElementShortName">w_pe_v[2175:0]</obj_property>
+         <obj_property name="ObjectShortName">w_pe_v[2175:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_PU_Block/DUT/PROCESSING_UNIT/w_data_s" type="array">
+         <obj_property name="ElementShortName">w_data_s[8191:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data_s[8191:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

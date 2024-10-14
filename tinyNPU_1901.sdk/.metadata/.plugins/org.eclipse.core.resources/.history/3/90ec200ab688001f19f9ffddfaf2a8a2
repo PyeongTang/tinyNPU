@@ -1,0 +1,212 @@
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+#include "xparameters.h"
+#include "xil_io.h"
+#include "tinyNPU.h"
+#include "xscugic.h"
+#include "sleep.h"
+#include "xil_exception.h"
+#include "xil_types.h"
+#include "xtime_l.h"
+
+#define IMAGE_RAM_BASE_ADDR		XPAR_BRAM_0_BASEADDR
+#define FILTER_RAM_BASE_ADDR	XPAR_BRAM_2_BASEADDR
+#define RESULT_RAM_BASE_ADDR	XPAR_BRAM_1_BASEADDR
+
+#define TINYNPU_BASE_ADDR 		XPAR_TINYNPU_0_S00_AXI_BASEADDR
+#define INTC_DEVICE_ID 			XPAR_SCUGIC_0_DEVICE_ID
+#define INTC_DEVICE_INT_ID 		61
+
+XScuGic InterruptController;
+static XScuGic_Config* GicConfig;
+volatile static int interruptFlag = FALSE;
+
+int Status;
+int helloWorldCount = 0;
+u32 temp;
+float exec_time;
+XTime tStart, tEnd;
+
+void ISR(void* CallbackRef){
+	XScuGic_Disable(&InterruptController, INTC_DEVICE_INT_ID);
+	interruptFlag = TRUE;
+}
+
+void setImageParam(u8 channel, u8 height, u8 width){
+	TINYNPU_mWriteReg(TINYNPU_BASE_ADDR, 4, channel << 16 | height << 8 | width);
+}
+
+void setFilterParam(u8 number, u8 channel, u8 height, u8 width){
+	TINYNPU_mWriteReg(TINYNPU_BASE_ADDR, 12, number << 24 | channel << 16 | height << 8 | width);
+}
+
+void setImageSliceParam(u8 number, u8 height, u8 width){
+	TINYNPU_mWriteReg(TINYNPU_BASE_ADDR, 8, number << 16 | height << 8 | width);
+}
+
+void setFilterSliceParam(u8 number, u8 height, u8 width){
+	TINYNPU_mWriteReg(TINYNPU_BASE_ADDR, 16, number << 16 | height << 8 | width);
+}
+
+void operationConvolution(u16 outputDepth){
+	TINYNPU_mWriteReg(TINYNPU_BASE_ADDR, 0, outputDepth << 3 | 0x03);
+}
+
+void operationPooling(u16 outputDepth){
+	TINYNPU_mWriteReg(TINYNPU_BASE_ADDR, 0, outputDepth << 3 | 0x01);
+}
+
+void operationMVM(u16 outputDepth){
+	TINYNPU_mWriteReg(TINYNPU_BASE_ADDR, 0, outputDepth << 3 | 0x02);
+}
+
+void termination(){
+	TINYNPU_mWriteReg(TINYNPU_BASE_ADDR, 0, 0x01 << 2);
+}
+
+void TEST_CONV(){
+	setImageParam(1, 4, 4);
+	setFilterParam(1, 1, 2, 2);
+	setImageSliceParam(3, 3, 4);
+	setFilterSliceParam(1, 4, 1);
+
+	for (int i = 0; i < 16; i++){
+		Xil_Out32(IMAGE_RAM_BASE_ADDR + 4*i, i+1);
+	}
+	for (int i = 0; i < 4; i++){
+		Xil_Out32(FILTER_RAM_BASE_ADDR + 4*i, i+1);
+	}
+
+	operationConvolution(9);
+}
+
+void TEST_MVM(){
+	setImageParam(1, 1, 4);
+	setFilterParam(1, 1, 4, 9);
+	setImageSliceParam(1, 1, 4);
+	setFilterSliceParam(3, 4, 3);
+
+	for (int i = 0; i < 4; i++){
+		Xil_Out32(IMAGE_RAM_BASE_ADDR + 4*i, i+1);
+	}
+	for (int i = 0; i < 36; i++){
+		Xil_Out32(FILTER_RAM_BASE_ADDR + 4*i, i+1);
+	}
+	operationMVM(9);
+}
+
+void TEST_POOL(){
+	setImageParam(1, 4, 4);
+	setFilterParam(1, 1, 2, 2);
+
+	for (int i = 0; i < 16; i++){
+		Xil_Out32(IMAGE_RAM_BASE_ADDR + 4*i, i+1);
+	}
+	operationPooling(9);
+}
+
+void TEST_MULTIPLE_FILTER(){
+	setImageParam(1, 4, 4);
+	setFilterParam(3, 1, 2, 2);
+	setImageSliceParam(3, 3, 4);
+	setFilterSliceParam(1, 4, 3);
+
+	for (int i = 0; i < 4*4; i++){
+		Xil_Out32(IMAGE_RAM_BASE_ADDR + 4*i, i+1);
+	}
+	for (int i = 0; i < 3*1*2*2; i++){
+		Xil_Out32(FILTER_RAM_BASE_ADDR + 4*i, i+1);
+	}
+
+	operationConvolution(27);
+}
+
+void TEST_MULTIPLE_CHANNEL_OF_IMAGE(){
+	setImageParam(2, 4, 4);
+	setFilterParam(2, 2, 2, 2);
+	setImageSliceParam(3, 3, 8);
+	setFilterSliceParam(1, 8, 2);
+
+	for (int i = 0; i < 2*4*4; i++){
+		Xil_Out32(IMAGE_RAM_BASE_ADDR + 4*i, i+1);
+	}
+	for (int i = 0; i < 2*2*2*2; i++){
+		Xil_Out32(FILTER_RAM_BASE_ADDR + 4*i, i+1);
+	}
+
+	operationConvolution(18);
+}
+
+int main()
+{
+    init_platform();
+
+//	ScuGig Setting //////////////////////////////////////////////////////
+	GicConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+
+	Status = XScuGic_CfgInitialize(	&InterruptController,\
+									GicConfig,\
+									GicConfig->CpuBaseAddress);
+
+	Status = XScuGic_SelfTest(&InterruptController);
+	////////////////////////////////////////////////////////////////////
+
+//	Exception //////////////////////////////////////////////////////
+	Xil_ExceptionRegisterHandler(	XIL_EXCEPTION_ID_INT,\
+									(Xil_ExceptionHandler) XScuGic_InterruptHandler,\
+									&InterruptController);
+
+	Xil_ExceptionEnable();
+////////////////////////////////////////////////////////////////////
+
+//	ISR Connection //////////////////////////////////////////////////////
+	Status = XScuGic_Connect(		&InterruptController,\
+									INTC_DEVICE_INT_ID,\
+									(Xil_ExceptionHandler)ISR,\
+									(void *)&InterruptController);
+////////////////////////////////////////////////////////////////////
+
+//	Polarity Setting //////////////////////////////////////////////////////
+	XScuGic_SetPriorityTriggerType(	&InterruptController,\
+									INTC_DEVICE_INT_ID,\
+									0x00,\
+									0x3);
+
+	XScuGic_Enable(&InterruptController, INTC_DEVICE_INT_ID);
+////////////////////////////////////////////////////////////////////
+    XTime_GetTime(&tStart);
+////////////////////////////////////////////////////////////////////
+
+//	TEST_CONV();
+
+//	TEST_MVM();
+
+//	TEST_POOL();
+
+//  TEST_MULTIPLE_FILTER();
+
+    TEST_MULTIPLE_CHANNEL_OF_IMAGE();
+
+	while (1) {
+		if (interruptFlag) {
+		    XTime_GetTime(&tEnd);
+		    printf("Execution time: %f ms\r", (float)(tEnd - tStart) / (COUNTS_PER_SECOND / 1000.0));
+			print("--------------------------\r\n");
+			interruptFlag = FALSE;
+			for (int i = 0; i < 18; i++){
+				temp = Xil_In32(RESULT_RAM_BASE_ADDR + (4*i));
+			    xil_printf("%2d : Result : %4d\r", i, temp);
+			}
+			print("--------------------------\r\n");
+			termination();
+			sleep(1);
+			XScuGic_Enable(&InterruptController, INTC_DEVICE_INT_ID);
+		}
+	}
+
+    cleanup_platform();
+    return 0;
+}

@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_F2R_Block_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_F2R_Block" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="23459fs"></ZoomEndTime>
+      <Cursor1Time time="156720fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="295"></NameColumnWidth>
+      <ValueColumnWidth column_width="164"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group699" type="group">
+      <obj_property name="label">CTRL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_n_reset" type="logic">
+         <obj_property name="ElementShortName">i_n_reset</obj_property>
+         <obj_property name="ObjectShortName">i_n_reset</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_set_param" type="logic">
+         <obj_property name="ElementShortName">i_set_param</obj_property>
+         <obj_property name="ObjectShortName">i_set_param</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_start_mac" type="logic">
+         <obj_property name="ElementShortName">i_start_mac</obj_property>
+         <obj_property name="ObjectShortName">i_start_mac</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_filter_ready" type="logic">
+         <obj_property name="ElementShortName">o_filter_ready</obj_property>
+         <obj_property name="ObjectShortName">o_filter_ready</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_done" type="logic">
+         <obj_property name="ElementShortName">o_done</obj_property>
+         <obj_property name="ObjectShortName">o_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_f2r_set_param_done" type="logic">
+         <obj_property name="ElementShortName">i_f2r_set_param_done</obj_property>
+         <obj_property name="ObjectShortName">i_f2r_set_param_done</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_f2r_enable" type="logic">
+         <obj_property name="ElementShortName">o_f2r_enable</obj_property>
+         <obj_property name="ObjectShortName">o_f2r_enable</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_f2r_read" type="logic">
+         <obj_property name="ElementShortName">o_f2r_read</obj_property>
+         <obj_property name="ObjectShortName">o_f2r_read</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_f2r_slice_last" type="logic">
+         <obj_property name="ElementShortName">i_f2r_slice_last</obj_property>
+         <obj_property name="ObjectShortName">i_f2r_slice_last</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_f2r_slice_read_done" type="logic">
+         <obj_property name="ElementShortName">i_f2r_slice_read_done</obj_property>
+         <obj_property name="ObjectShortName">i_f2r_slice_read_done</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_f2r_set_param" type="logic">
+         <obj_property name="ElementShortName">o_f2r_set_param</obj_property>
+         <obj_property name="ObjectShortName">o_f2r_set_param</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_f2s_enable" type="logic">
+         <obj_property name="ElementShortName">o_f2s_enable</obj_property>
+         <obj_property name="ObjectShortName">o_f2s_enable</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_f2s_read" type="logic">
+         <obj_property name="ElementShortName">o_f2s_read</obj_property>
+         <obj_property name="ObjectShortName">o_f2s_read</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_f2s_read_done" type="logic">
+         <obj_property name="ElementShortName">i_f2s_read_done</obj_property>
+         <obj_property name="ObjectShortName">i_f2s_read_done</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_f2s_set_param" type="logic">
+         <obj_property name="ElementShortName">o_f2s_set_param</obj_property>
+         <obj_property name="ObjectShortName">o_f2s_set_param</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_f2s_set_param_done" type="logic">
+         <obj_property name="ElementShortName">i_f2s_set_param_done</obj_property>
+         <obj_property name="ObjectShortName">i_f2s_set_param_done</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/i_rom_read_done" type="logic">
+         <obj_property name="ElementShortName">i_rom_read_done</obj_property>
+         <obj_property name="ObjectShortName">i_rom_read_done</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/o_en_rom" type="logic">
+         <obj_property name="ElementShortName">o_en_rom</obj_property>
+         <obj_property name="ObjectShortName">o_en_rom</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/present_state" type="array">
+         <obj_property name="ElementShortName">present_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">present_state[2:0]</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="group786" type="group">
+         <obj_property name="label">reg</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_filter_ready" type="logic">
+            <obj_property name="ElementShortName">r_filter_ready</obj_property>
+            <obj_property name="ObjectShortName">r_filter_ready</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_done" type="logic">
+            <obj_property name="ElementShortName">r_done</obj_property>
+            <obj_property name="ObjectShortName">r_done</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_f2r_enable" type="logic">
+            <obj_property name="ElementShortName">r_f2r_enable</obj_property>
+            <obj_property name="ObjectShortName">r_f2r_enable</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_f2r_read" type="logic">
+            <obj_property name="ElementShortName">r_f2r_read</obj_property>
+            <obj_property name="ObjectShortName">r_f2r_read</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_f2r_set_param" type="logic">
+            <obj_property name="ElementShortName">r_f2r_set_param</obj_property>
+            <obj_property name="ObjectShortName">r_f2r_set_param</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_f2s_enable" type="logic">
+            <obj_property name="ElementShortName">r_f2s_enable</obj_property>
+            <obj_property name="ObjectShortName">r_f2s_enable</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_f2s_read" type="logic">
+            <obj_property name="ElementShortName">r_f2s_read</obj_property>
+            <obj_property name="ObjectShortName">r_f2s_read</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_f2s_set_param" type="logic">
+            <obj_property name="ElementShortName">r_f2s_set_param</obj_property>
+            <obj_property name="ObjectShortName">r_f2s_set_param</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R_CTRL/r_en_rom" type="logic">
+            <obj_property name="ElementShortName">r_en_rom</obj_property>
+            <obj_property name="ObjectShortName">r_en_rom</obj_property>
+            <obj_property name="CustomSignalColor">#808000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group750" type="group">
+      <obj_property name="label">F2R</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_n_reset" type="logic">
+         <obj_property name="ElementShortName">i_n_reset</obj_property>
+         <obj_property name="ObjectShortName">i_n_reset</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_enable" type="logic">
+         <obj_property name="ElementShortName">i_enable</obj_property>
+         <obj_property name="ObjectShortName">i_enable</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_read" type="logic">
+         <obj_property name="ElementShortName">i_read</obj_property>
+         <obj_property name="ObjectShortName">i_read</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_set_param" type="logic">
+         <obj_property name="ElementShortName">i_set_param</obj_property>
+         <obj_property name="ObjectShortName">i_set_param</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_mode_conv" type="logic">
+         <obj_property name="ElementShortName">i_mode_conv</obj_property>
+         <obj_property name="ObjectShortName">i_mode_conv</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_filter_width" type="array">
+         <obj_property name="ElementShortName">i_filter_width[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_filter_width[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_filter_height" type="array">
+         <obj_property name="ElementShortName">i_filter_height[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_filter_height[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_filter_channel" type="array">
+         <obj_property name="ElementShortName">i_filter_channel[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_filter_channel[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_filter_number" type="array">
+         <obj_property name="ElementShortName">i_filter_number[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_filter_number[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_slice_width" type="array">
+         <obj_property name="ElementShortName">i_slice_width[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_slice_width[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_slice_height" type="array">
+         <obj_property name="ElementShortName">i_slice_height[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_slice_height[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_slice_number" type="array">
+         <obj_property name="ElementShortName">i_slice_number[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_slice_number[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/o_set_param_done" type="logic">
+         <obj_property name="ElementShortName">o_set_param_done</obj_property>
+         <obj_property name="ObjectShortName">o_set_param_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/o_slice_read_done" type="logic">
+         <obj_property name="ElementShortName">o_slice_read_done</obj_property>
+         <obj_property name="ObjectShortName">o_slice_read_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/o_slice_last" type="logic">
+         <obj_property name="ElementShortName">o_slice_last</obj_property>
+         <obj_property name="ObjectShortName">o_slice_last</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_data" type="array">
+         <obj_property name="ElementShortName">i_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/i_valid" type="logic">
+         <obj_property name="ElementShortName">i_valid</obj_property>
+         <obj_property name="ObjectShortName">i_valid</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/o_data" type="array">
+         <obj_property name="ElementShortName">o_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2R/o_valid" type="logic">
+         <obj_property name="ElementShortName">o_valid</obj_property>
+         <obj_property name="ObjectShortName">o_valid</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="group787" type="group">
+         <obj_property name="label">reg</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_slice_read_done" type="logic">
+            <obj_property name="ElementShortName">r_slice_read_done</obj_property>
+            <obj_property name="ObjectShortName">r_slice_read_done</obj_property>
+            <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_slice_last" type="logic">
+            <obj_property name="ElementShortName">r_slice_last</obj_property>
+            <obj_property name="ObjectShortName">r_slice_last</obj_property>
+            <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_all_filter_count" type="logic">
+            <obj_property name="ElementShortName">r_all_filter_count</obj_property>
+            <obj_property name="ObjectShortName">r_all_filter_count</obj_property>
+            <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R/w_slice_data_addr" type="array">
+            <obj_property name="ElementShortName">w_slice_data_addr[7:0]</obj_property>
+            <obj_property name="ObjectShortName">w_slice_data_addr[7:0]</obj_property>
+            <obj_property name="CustomSignalColor">#D2691E</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_output_filter" type="array">
+            <obj_property name="ElementShortName">r_output_filter[0:3][7:0]</obj_property>
+            <obj_property name="ObjectShortName">r_output_filter[0:3][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#D2691E</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_output_filter[0]" type="array">
+               <obj_property name="ElementShortName">[0][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#D2691E</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_output_filter[1]" type="array">
+               <obj_property name="ElementShortName">[1][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#D2691E</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_output_filter[2]" type="array">
+               <obj_property name="ElementShortName">[2][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#D2691E</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_output_filter[3]" type="array">
+               <obj_property name="ElementShortName">[3][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#D2691E</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group788" type="group">
+            <obj_property name="label">OUTPUT_BUF_CNT</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_filter_width_count" type="array">
+               <obj_property name="ElementShortName">r_filter_width_count[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_filter_width_count[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_filter_height_count" type="array">
+               <obj_property name="ElementShortName">r_filter_height_count[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_filter_height_count[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_filter_channel_count" type="array">
+               <obj_property name="ElementShortName">r_filter_channel_count[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_filter_channel_count[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_filter_number_count" type="array">
+               <obj_property name="ElementShortName">r_filter_number_count[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_filter_number_count[7:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group790" type="group">
+            <obj_property name="label">PARAM</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_mode_conv" type="logic">
+               <obj_property name="ElementShortName">r_mode_conv</obj_property>
+               <obj_property name="ObjectShortName">r_mode_conv</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_set_param_done" type="logic">
+               <obj_property name="ElementShortName">r_set_param_done</obj_property>
+               <obj_property name="ObjectShortName">r_set_param_done</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_filter_width" type="array">
+               <obj_property name="ElementShortName">r_filter_width[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_filter_width[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_filter_height" type="array">
+               <obj_property name="ElementShortName">r_filter_height[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_filter_height[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_filter_channel" type="array">
+               <obj_property name="ElementShortName">r_filter_channel[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_filter_channel[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_filter_number" type="array">
+               <obj_property name="ElementShortName">r_filter_number[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_filter_number[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_slice_width" type="array">
+               <obj_property name="ElementShortName">r_slice_width[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_slice_width[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_slice_height" type="array">
+               <obj_property name="ElementShortName">r_slice_height[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_slice_height[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_slice_number" type="array">
+               <obj_property name="ElementShortName">r_slice_number[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_slice_number[7:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group789" type="group">
+            <obj_property name="label">SLICE_CNT</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_slice_width_count" type="array">
+               <obj_property name="ElementShortName">r_slice_width_count[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_slice_width_count[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_slice_height_count" type="array">
+               <obj_property name="ElementShortName">r_slice_height_count[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_slice_height_count[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_F2R_Block/DUT/F2R/r_slice_number_count" type="array">
+               <obj_property name="ElementShortName">r_slice_number_count[7:0]</obj_property>
+               <obj_property name="ObjectShortName">r_slice_number_count[7:0]</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group751" type="group">
+      <obj_property name="label">F2S</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_n_reset" type="logic">
+         <obj_property name="ElementShortName">i_n_reset</obj_property>
+         <obj_property name="ObjectShortName">i_n_reset</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_enable" type="logic">
+         <obj_property name="ElementShortName">i_enable</obj_property>
+         <obj_property name="ObjectShortName">i_enable</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_read" type="logic">
+         <obj_property name="ElementShortName">i_read</obj_property>
+         <obj_property name="ObjectShortName">i_read</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_set_param" type="logic">
+         <obj_property name="ElementShortName">i_set_param</obj_property>
+         <obj_property name="ObjectShortName">i_set_param</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_slice_width" type="array">
+         <obj_property name="ElementShortName">i_slice_width[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_slice_width[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_slice_height" type="array">
+         <obj_property name="ElementShortName">i_slice_height[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_slice_height[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/o_set_param_done" type="logic">
+         <obj_property name="ElementShortName">o_set_param_done</obj_property>
+         <obj_property name="ObjectShortName">o_set_param_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/o_read_done" type="logic">
+         <obj_property name="ElementShortName">o_read_done</obj_property>
+         <obj_property name="ObjectShortName">o_read_done</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_valid" type="logic">
+         <obj_property name="ElementShortName">i_valid</obj_property>
+         <obj_property name="ObjectShortName">i_valid</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/i_data" type="array">
+         <obj_property name="ElementShortName">i_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/o_data" type="array">
+         <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/o_valid" type="logic">
+         <obj_property name="ElementShortName">o_valid</obj_property>
+         <obj_property name="ObjectShortName">o_valid</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/w_systolic_array_addr" type="array">
+         <obj_property name="ElementShortName">w_systolic_array_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">w_systolic_array_addr[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_systolic_array" type="array">
+         <obj_property name="ElementShortName">r_systolic_array[0:17][7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_systolic_array[0:17][7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="group792" type="group">
+         <obj_property name="label">CNT</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_row_count" type="array">
+            <obj_property name="ElementShortName">r_row_count[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r_row_count[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_col_count" type="array">
+            <obj_property name="ElementShortName">r_col_count[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r_col_count[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_sys_cycle_count" type="array">
+            <obj_property name="ElementShortName">r_sys_cycle_count[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r_sys_cycle_count[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_cycle_one_round" type="logic">
+            <obj_property name="ElementShortName">r_cycle_one_round</obj_property>
+            <obj_property name="ObjectShortName">r_cycle_one_round</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group791" type="group">
+         <obj_property name="label">PARAM</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_set_param_done" type="logic">
+            <obj_property name="ElementShortName">r_set_param_done</obj_property>
+            <obj_property name="ObjectShortName">r_set_param_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_slice_width" type="array">
+            <obj_property name="ElementShortName">r_slice_width[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r_slice_width[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_slice_height" type="array">
+            <obj_property name="ElementShortName">r_slice_height[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r_slice_height[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_systolic_width" type="array">
+            <obj_property name="ElementShortName">r_systolic_width[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r_systolic_width[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_F2R_Block/DUT/F2S/r_systolic_height" type="array">
+            <obj_property name="ElementShortName">r_systolic_height[7:0]</obj_property>
+            <obj_property name="ObjectShortName">r_systolic_height[7:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

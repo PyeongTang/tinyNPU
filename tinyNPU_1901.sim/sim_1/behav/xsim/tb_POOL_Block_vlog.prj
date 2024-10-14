@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../tinyNPU.srcs/sources_1/new/POOL_Block.v" \
+"../../../../tinyNPU.srcs/sources_1/imports/new/comparator.v" \
+"../../../../tinyNPU.srcs/sim_1/new/tb_POOL_Block.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
